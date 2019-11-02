@@ -60,3 +60,8 @@ sudo pip3 install -U pip
 sudo pip3 install -U numpy==1.16.1 future==0.17.1 mock==3.0.5 h5py==2.9.0 keras_preprocessing==1.0.5 keras_applications==1.0.6 enum34 
 sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
 ```
+
+## Test USB Cam
+```
+gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, width=1280, height=720 ! videoconvert ! xvimagesink
+```
