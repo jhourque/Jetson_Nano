@@ -22,6 +22,7 @@ sudo reboot
 ## Install opencv 4
 ```
 sudo apt update
+sudo apt install -y libcanberra-gtk-module libcanberra-gtk3-module
 sudo apt install -y build-essential cmake git libgtk2.0-dev pkg-config  libswscale-dev libtbb2 libtbb-dev
 sudo apt install -y python-dev python3-dev python-numpy python3-numpy
 sudo apt install -y curl
